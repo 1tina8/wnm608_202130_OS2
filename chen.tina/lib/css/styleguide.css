@@ -5,9 +5,9 @@
 }
 
 :root {
-   --color-neutral-light:#e4e2e9;
-   --color-neutral-medium:#8c8894;
-   --color-neutral-dark:#423f4a;
+   --color-neutral-light:#f2c9cc;
+   --color-neutral-medium:#f3a8ad;
+   --color-neutral-dark:#f1878e;
 
    --color-white:#fff;
    --color-black:#111;
@@ -17,7 +17,7 @@
 
 
    --font-sans: Helvetica, Arial, sans-serif;
-   --font-serif: Cambria, Georgia, "Times New Roman", serif;
+   --font-serif: "PT Sans",Cambria, Georgia, serif;
 }
 
 body {
@@ -37,7 +37,6 @@ h6 {
 
 a {
    color:inherit;
-   font-weight:bold;
    text-decoration:none;
 }
 a:hover {
@@ -52,8 +51,19 @@ a:hover {
    max-width:1000px;
    margin-left:auto;
    margin-right:auto;
+
+
 }
 
+.Product1-body {
+   width: 400px;
+   max-height: 100%;
+   min-width: 100%;
+   object-fit: cover;
+   align-items: center;
+ /*  padding: 0 1em;*/
+ /*  justify-items: center;*/
+}
 
 .hidden { display:none; }
 
@@ -119,6 +129,7 @@ a:hover {
 
 
 
+
 /* CARD */
 
 .card {
@@ -150,3 +161,16 @@ a:hover {
    .card.flat {
       padding:0;
    }
+
+
+   .card>:first-child { margin-top:0; }
+   .card>:last-child { margin-bottom:0; }
+
+
+
+/* WELL */
+.well {
+   background-color:var(--color-neutral-medium);
+   padding:0.5em;
+   border-radius:0.2em;
+}

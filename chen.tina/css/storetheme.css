@@ -1,7 +1,7 @@
 :root {
    
    --color-neutral-light:#f2c9cc;
-   --color-neutral-mediun:#f3a8ad;
+   --color-neutral-medium:#f3a8ad;
    --color-neutral-dark:#f1878e;
 
 
@@ -9,4 +9,47 @@ body {
    background-color:#f8f8fa;
 }
 
+
+@media (max-width:500px) {
+   :root {
+      --header-height:2rem;
+   }
+}
+/*BUTTON*/
+
+.button{
+  border-radius:20px 20px 20px 20px;
+  -moz-border-radius:20px 20px 20px 20px;
+  -webkit-border-radius:20px 20px 20px 20px;
+  background:white; 
+  height:40px;
+  width:140px;
+  margin-left: 80%;
+  margin-top: 35%;
+}
+
+.smallbutton{
+   border-radius:20px 20px 20px 20px;
+  -moz-border-radius:20px 20px 20px 20px;
+  -webkit-border-radius:20px 20px 20px 20px;
+  background:white; 
+  height:30px;
+  width:100px;
+  margin: auto;
+}
+
+/*View Window*/
+
+.small-view-window{
+   position:relative;
+   overflow:hidden;
+
+   background-size:cover;
+   background-position:center;
+   height:55vh;
+
+   margin-top: 5em;
+}
+
+  
 
