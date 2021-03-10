@@ -6,6 +6,7 @@
 
 - http://tinanachen.com
 - http://tinanachen.com/aau/wnm608/chen.tina
+- http://tinanachen.com/aau/wnm608/chen.tina/styleguide/
 
 ### Recipes Link
 http://tinanachen.com/aau/wnm608/chen.tina/recipes/index.html

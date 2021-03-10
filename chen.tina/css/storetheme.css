@@ -4,9 +4,11 @@
    --color-neutral-medium:#f3a8ad;
    --color-neutral-dark:#f1878e;
 
+   }
 
 body {
    background-color:#f8f8fa;
+   padding-bottom: 10em;
 }
 
 
@@ -15,41 +17,15 @@ body {
       --header-height:2rem;
    }
 }
-/*BUTTON*/
 
-.button{
-  border-radius:20px 20px 20px 20px;
-  -moz-border-radius:20px 20px 20px 20px;
-  -webkit-border-radius:20px 20px 20px 20px;
-  background:white; 
-  height:40px;
-  width:140px;
-  margin-left: 80%;
-  margin-top: 35%;
+
+/*.recommended-widget{
+  padding: 1em;
+
+}*/
+
+.recommended-widget img{
+  max-width: 100%;
+
 }
-
-.smallbutton{
-   border-radius:20px 20px 20px 20px;
-  -moz-border-radius:20px 20px 20px 20px;
-  -webkit-border-radius:20px 20px 20px 20px;
-  background:white; 
-  height:30px;
-  width:100px;
-  margin: auto;
-}
-
-/*View Window*/
-
-.small-view-window{
-   position:relative;
-   overflow:hidden;
-
-   background-size:cover;
-   background-position:center;
-   height:55vh;
-
-   margin-top: 5em;
-}
-
-  
 

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Framework Styleguide</title>
+	 <base href="/aau/wnm608/chen.tina/">
+
+   <link rel="stylesheet" href="lib/css/styleguide.css">
+   <link rel="stylesheet" href="lib/css/guidesystem.css">
+   <link rel="stylesheet" href="css/storetheme.css">
+</head>
+<body>
+	
+
+	<header class="navbar">
+		<div class="container display-flex flex-align-center">
+			<div class="felx-none">
+				<h1>Styleguide</h1>
+			</div>
+			<div class="felx-stretch"></div>
+			<nav class=" nav felx-none">
+				
+			</nav>
+		</div>		
+	</header>
+
+	<div class="container">
+		<div class="card soft">
+		<h2>Table of Contents</h2>
+
+		<ul class="nav toc">
+			<li><a href="styleguide/#typography">Typography</a></li>
+			<li><a href="styleguide/#color">Color</a></li>
+			<li><a href="styleguide/#grid">Grid</a></li>
+			<li><a href="styleguide/#card">Card</a></li>
+			<li><a href="styleguide/#navigations">Navigatios</a></li>
+			<li><a href="styleguide/#buttons">Buttons</a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+<div class="container" id="typography">
+	<div class="card soft">
+		<h2>Typoography</h2>
+
+		<!-- h$*6>{heading$} -->
+		<div class="display-flex flex-align-center">
+			<div class="flex-non">
+				<code>&lt;h1>&lt;/h1></code>
+			</div>
+			<div class="felx-stretch"><h1>heading1</h1></div>
+		</div>
+
+		<div class="display-flex flex-align-center">
+			<div class="flex-non">
+				<code>&lt;h2>&lt;/h2></code>
+			</div>
+			<div class="felx-stretch"><h2>heading2</h2></div>
+		</div>
+
+		<div class="display-flex flex-align-center">
+			<div class="flex-non">
+				<code>&lt;h3>&lt;/h3></code>
+			</div>
+			<div class="felx-stretch"><h3>heading3</h3></div>
+		</div>
+
+		<div class="display-flex flex-align-center">
+			<div class="flex-non">
+				<code>&lt;h4>&lt;/h4></code>
+			</div>
+			<div class="felx-stretch"><h4>heading4</h4></div>
+		</div>
+
+		<div class="display-flex flex-align-center">
+			<div class="flex-non">
+				<code>&lt;h5>&lt;/h5></code>
+			</div>
+			<div class="felx-stretch"><h5>heading5</h5></div>
+		</div>
+
+		<div class="display-flex flex-align-center">
+			<div class="flex-non">
+				<code>&lt;h6>&lt;/h6></code>
+			</div>
+			<div class="felx-stretch"><h6>heading6</h6></div>
+		</div>
+
+
+		<div class="container" id="card">
+			<div class="card soft">
+				<h2>Color</h2>
+         <div style="background-color:var(--color-neutral-light)">Color Neutral Light</div>
+         <div style="background-color:var(--color-neutral-medium)">Color Neutral Medium</div>
+         <div style="background-color:var(--color-neutral-dark)">Color Neutral Dark</div>
+      </div>
+   </div>
+
+   		<div class="container" id="grid">
+			<div class="card soft">
+				<h2>Grid</h2>
+
+				<h3>Basic Grid Structure</h3>
+				<h4>Single Column Non Responsive (probably shouldn't have been a grid)</h4>
+				<div class="grid">
+					<div class="col-xs-12">
+						<div class="well">Column 12</div>
+					</div>
+				</div>
+
+				<h4>3 Column Responsive</h4>
+				<div class="grid">
+					<div class="col-xs-12 col-md-4">
+						<div class="well">col-xs-12 col-md-4</div>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="well">col-xs-12 col-md-4</div>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="well">col-xs-12 col-md-4</div>
+					</div>
+				</div>
+
+				<h4>4 Column Responsive</h4>
+				<div class="grid">
+					<div class="col-xs-12 col-md-3">
+						<div class="well">col-xs-12 col-md-3</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="well">col-xs-12 col-md-3</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="well">col-xs-12 col-md-3</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="well">col-xs-12 col-md-3</div>
+					</div>
+				</div>
+
+				<h3>Gap</h3>
+				<h4>4 Column Responsive With Gap</h4>
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-3">
+						<div class="well">col-xs-12 col-md-3</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="well">col-xs-12 col-md-3</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="well">col-xs-12 col-md-3</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="well">col-xs-12 col-md-3</div>
+					</div>
+				</div>
+
+				<h3>Other Examples</h3>
+				<h4>This Shit</h4>
+				<div class="grid gap">
+            <div class="col-xs-12 col-md-6">
+               <img src="https://via.placeholder.com/600" class="media-image" alt="">
+            </div>
+            <div class="col-xs-12 col-md-6">
+               <div class="grid gap">
+                  
+                  <div class="col-xs-12 col-sm-6">
+                     <img src="https://via.placeholder.com/600" class="media-image" alt="">
+                     <div>text</div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                     <img src="https://via.placeholder.com/600" class="media-image" alt="">
+                     <div>text</div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                     <img src="https://via.placeholder.com/600" class="media-image" alt="">
+                     <div>text</div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                     <img src="https://via.placeholder.com/600" class="media-image" alt="">
+                     <div>text</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+				
+
+
+
+		<div class="container" id="card">
+			<div class="card soft">
+				<h2>Card</h2>
+
+				<h3>Standard Card</h3>
+				<div class="well"><div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis accusantium quis non error ipsam aspernatur commodi, aliquam quasi ratione.</div>
+			</div>
+
+
+
+				<h3>Medium Card</h3>
+				<div class="card medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis accusantium quis non error ipsam aspernatur commodi, aliquam quasi ratione.</div>
+
+				<h3>Dark Card</h3>
+				<div class="card dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis accusantium quis non error ipsam aspernatur commodi, aliquam quasi ratione.</div>
+
+				<h3>Soft Card</h3>
+				<div class="card soft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis accusantium quis non error ipsam aspernatur commodi, aliquam quasi ratione.</div>
+
+
+				<h3>Soft Standard Card</h3>
+				<div class="card soft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis accusantium quis non error ipsam aspernatur commodi, aliquam quasi ratione.</div>
+
+				<h3>Soft Medium Card</h3>
+				<div class="card medium soft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis accusantium quis non error ipsam aspernatur commodi, aliquam quasi ratione.</div>
+
+
+				<h3>Soft Dark Card</h3>
+				<div class="card dark soft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis accusantium quis non error ipsam aspernatur commodi, aliquam quasi ratione.</div>
+
+
+				<h3>Soft Rainbow Card</h3>
+				<div class="card rainbow soft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis accusantium quis non error ipsam aspernatur commodi, aliquam quasi ratione.</div>
+			
+				<h3>Soft Flat Card</h3>
+				<div class="card flat soft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis accusantium quis non error ipsam aspernatur commodi, aliquam quasi ratione.</div>
+			</div>
+		</div>
+</div>
+
+
+<div class="container" id="navigations">
+	<div class="card soft">
+		<h2>Navigations</h2>
+
+		<h3>Basic Nav</h3>
+
+		<div class="grid">
+			<div class="col-4">
+				<nav class="nav">
+			<!-- ul>li*4>a[href=#]>{Link $} -->
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</nav>
+		</div>
+			<div class="col-8">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, id non nemo, voluptas possimus temporibus, dolore, rerum minima numquam enim voluptatem provident. Quam architecto provident alias asperiores perspiciatis suscipit. Aliquam amet expedita adipisci, modi, ducimus beatae officia quam rem. Neque mollitia impedit, alias. Sed architecto facere laboriosam explicabo atque expedita.</p>
+			<p>Ipsam nesciunt esse at perferendis, sequi facilis soluta, minus a quia. Voluptatem, asperiores iusto! Ea amet dignissimos magni quaerat laboriosam soluta quidem enim eligendi sapiente ipsum a ad sunt quia dolor praesentium saepe tempora voluptatum ut, non modi error ex architecto beatae nihil quos! Tenetur ex harum sint sapiente ut!</p>
+			</div>
+		</div>
+
+
+
+
+		<h3>Flex Nav</h3>
+
+			<nav class="nav flex">
+			<!-- ul>li*4>a[href=#]>{Link $} -->
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</nav>
+
+
+		<h3>Stretch Nav</h3>
+
+			<nav class="nav stretch">
+			<!-- ul>li*4>a[href=#]>{Link $} -->
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</nav>
+
+
+
+			<h3>Navbar</h3>
+		</div>
+	</div>
+
+
+
+			<header class="navbar">
+				<div class="container display-flex flex-align-center">
+					<div class="flex-none">
+						<h1>Title</h1>
+					</div>
+					<div class="flex-stretch"></div>
+					<nav class="nav flex flex-none">
+						<ul>
+							<!-- li*3>a[href=#]>{Link $} -->
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+							<li><a href="#">Link 3</a></li>
+						</ul>
+						
+					</nav>
+				</div>
+			</header>
+	<div class="container">
+		<div class="card soft">
+		</div>
+	</div>
+
+		<div class="container" id="buttons">
+			<div class="buttons">
+				<h2>Buttons</h2>
+
+				<h3>Button Shapes</h3>
+
+				<div>
+				<button class="mainbutton">
+					mainbutton
+				</button>
+				<button class="mainbutton button-radius">
+					Radius
+				</button>
+				<button class="mainbutton button-round">
+					Round
+				</button>
+				<button class="mainbutton button-square">
+					Square
+				</button>
+				<button class="mainbutton button-circle">
+					Circle
+				</button>
+				</div>
+
+				<h3>Outline Buttons</h3>
+				<div>
+					<button class="outlinebutton main">
+						Main
+					</button>
+						<button class="outlinebutton list">
+						List
+					</button>
+					<button class="outlinebutton comfirm">
+						Comfirm
+					</button>
+					<button class="outlinebutton cancel">
+						Cancel
+					</button>
+					<button class="outlinebutton add">
+						Add to Cart
+					</button>
+				</div>
+
+						<h3>Solid Buttons</h3>
+				<div>
+					<button class="solidbutton solidmain">
+						Main
+					</button>
+						<button class="solidbutton solidlist">
+						List
+					</button>
+					<button class="solidbutton solidcomfirm">
+						Comfirm
+					</button>
+					<button class="solidbutton solidcancel">
+						Cancel
+					</button>
+					<button class="solidbutton solidadd">
+						Add to Cart
+					</button>
+				</div>
+
+					<h3>Button Size</h3>
+					<div>
+					<button>
+					Small
+					</button>
+					<button class="mediumbutton ">
+					Medium
+					</button>
+				</div>
+		</div>
+	</div>
+
+
+
+	</div>
+</div>
+
+
+
+
+</body>
+</html>
