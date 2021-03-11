@@ -5,9 +5,14 @@
 }
 
 :root {
-   --color-neutral-light:#e4e2e9;
-   --color-neutral-medium:#8c8894;
-   --color-neutral-dark:#423f4a;
+
+    --color-neutral-light: #e9e2e5;
+    --color-neutral-medium: #94888e;
+    --color-neutral-dark: #4a3f43;
+
+   --color-pink-light:#e4e2e9;
+   --color-pink-medium:#8c8894;
+   --color-pink-dark:#423f4a;
 
    --color-white:#fff;
    --color-black:#111;

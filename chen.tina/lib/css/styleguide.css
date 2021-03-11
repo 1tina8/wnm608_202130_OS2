@@ -5,9 +5,14 @@
 }
 
 :root {
-   --color-neutral-light:#f2c9cc;
-   --color-neutral-medium:#f3a8ad;
-   --color-neutral-dark:#f1878e;
+
+     --color-neutral-light: #e9e2e5;
+    --color-neutral-medium: #94888e;
+    --color-neutral-dark: #4a3f43;
+
+   --color-pink-light:#f2c9cc;
+   --color-pink-medium:#f3a8ad;
+   --color-pink-dark:#f1878e;
 
     --color-main-light: #fdd9cf;
     --color-main-medium: #f0b4ce;
@@ -131,7 +136,7 @@ a:hover {
 
 
 .navbar {
-   background-color:var(--color-neutral-dark);
+   background-color:var(--color-pink-dark);
    color:var(--color-white);
    line-height:var(--header-height);
 }
@@ -212,7 +217,7 @@ a:hover {
 }
 
 .mainbutton:hover {
-  background-color: var(--color-neutral-medium);
+  background-color: var(--color-pink-medium);
   color: white;
 }
 
@@ -260,22 +265,22 @@ a:hover {
 }
 
 .main{
-    border-color: var(--color-neutral-medium);
+    border-color: var(--color-pink-medium);
     color: #8e4556;
 }
 
 .main:hover {
-  background-color: var(--color-neutral-medium);
+  background-color: var(--color-pink-medium);
   color: white;
 }
 
 .solidmain{
-   background-color: var(--color-neutral-medium);
+   background-color: var(--color-pink-medium);
     color: white;
 }
 
 .solidmain:hover {
-  background-color: var(--color-neutral-dark);
+  background-color: var(--color-pink-dark);
   color: white;
 }
 
@@ -405,14 +410,14 @@ a:hover {
    }
    .card.hard {
       border-radius:0.2em;
-      border:2px solid var(--color-neutral-medium);
+      border:2px solid var(--color-pink-medium);
    }
    .card.dark {
-      background-color:var(--color-neutral-dark);
+      background-color:var(--color-pink-dark);
       color:var(--color-white);
    }
    .card.medium {
-      background-color:var(--color-neutral-medium);
+      background-color:var(--color-pink-medium);
    }
 
    .card.rainbow{
@@ -436,7 +441,7 @@ a:hover {
 
 /* WELL */
 .well {
-   background-color:var(--color-neutral-medium);
+   background-color:var(--color-pink-medium);
    padding:0.5em;
    border-radius:0.2em;
 }
