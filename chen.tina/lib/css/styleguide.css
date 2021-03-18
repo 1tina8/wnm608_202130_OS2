@@ -6,21 +6,26 @@
 
 :root {
 
+     --color-neutral-lighter: #f0f0f2;
      --color-neutral-light: #e9e2e5;
     --color-neutral-medium: #94888e;
     --color-neutral-dark: #4a3f43;
 
-   --color-pink-light:#f2c9cc;
-   --color-pink-medium:#f3a8ad;
-   --color-pink-dark:#f1878e;
+   --color-main-light:#f2c9cc;
+   --color-main-medium:#f3a8ad;
+   --color-main-dark:#f1878e;
 
-    --color-main-light: #fdd9cf;
-    --color-main-medium: #f0b4ce;
-    --color-main-dark: #cf677f;
+
+    --color-main-sub-light: #fdd9cf;
+    --color-main-sub-medium: #f0b4ce;
+    --color-main-sub-dark: #cf677f;
 
     --color-sub-light: #f9f0de;
     --color-sub-medium: #fdc75a;
     --color-sub-dark: #79290b;
+
+    --color-sell-medium: #01ba76;
+    --color-sell-dark: #048d5b;
 
    --color-white:#fff;
    --color-black:#111;
@@ -48,6 +53,23 @@ h4,
 h5,
 h6 {
    font-family:var(--font-serif);
+}
+
+h1 {
+   font-size:1.5em;
+}
+h2 {
+   font-size:1.25em;
+}
+h3,
+h4 {
+   font-size:1em;
+   margin:1em 0;
+}
+h5,
+h6 {
+   font-size:0.8em;
+   margin:1em 0;
 }
 
 a {
@@ -96,6 +118,11 @@ a:hover {
 
 
 
+.overscroll{ overflow: auto; }
+.overscroll-x{ overflow-x: auto; }
+.overscroll-y{ overflow-y: auto; }
+
+
 
 
 /* COMPONENT CLASSES */
@@ -103,6 +130,7 @@ a:hover {
 
 /*NAV*/
 
+.crumbs ul,
 .nav ul,
 .navbar ul {
    list-style-type:none;
@@ -123,6 +151,7 @@ a:hover {
 }
 
 
+.crumbs ul,
 .nav.flex ul,
 .nav.stretch ul{
    display: flex;
@@ -134,9 +163,18 @@ a:hover {
 }
 
 
+.crumbs li:not(:first-child)::before{
+  content: '/';(whatever symbol i want »)
+  display: inline-block;
+  margin: 0 0.5em;
+  
+
+}
+
+/*Navbar*/
 
 .navbar {
-   background-color:var(--color-pink-dark);
+   background-color:var(--color-main-dark);
    color:var(--color-white);
    line-height:var(--header-height);
 }
@@ -150,6 +188,187 @@ a:hover {
    display:block;
    padding:0 0.5em;
 }
+
+/*TABLES*/
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table td,
+.table th{
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+.table.striped tbody tr:nth-child(odd){
+  background-color: var(--color-neutral-light);
+}
+
+.table.lined.all tbody tr,
+.table.lined.horizontal tbody tr{
+  border-top:1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all td:not(:first-child),
+.table.lined.all th:not(:first-child),
+.table.lined.vertical td:not(:first-child),
+.table.lined.vertical th:not(:first-child){
+  border-left:1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all,
+.table.lined.outline {
+  border:1px solid var(--color-neutral-medium);
+}
+
+
+/*Horizontal Rule*/
+hr{
+  border-width: 0;
+  margin: 1em 0;
+  border-bottom: 1px dashed var(--color-neutral-medium);
+}
+
+
+/*FORMS*/
+.form-control{
+  margin:1em 0: 
+}
+
+
+.form-input{
+  display: inline-block;
+  width: 100%;
+  border-width: 0;
+  background-color: var(--color-neutral-lighter);
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  font:inherit;
+  outline: 0;
+  -webkit-appearance:none;
+ /* box-shadow: inset 2px 2px 5px rgba(0,0,0,0.1);*/
+}
+.form-button+.form-button,
+.form-input+.form-input{
+  margin-top: 0.2em;
+}
+.form-input-lined{
+  display: inline-block;
+  width: 100%;
+  padding: 0.5em 1em;
+  font:inherit;
+  outline: 0;
+  background-color: transparent;
+  border-width: 0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--color-neutral-medium);
+  -webkit-appearance:none;
+
+}
+.form-input-lined:focus{
+  border-bottom-color: var(--color-main-light);
+}
+.form-label{
+  margin:0.5em 0;
+  display: inline-block;
+  font-size: 0.8em;
+  color: var(--color-neutral-medium);
+}
+.form-button{
+  display: inline-block;
+  width: 100%;
+  border-width: 0;
+  background-color: var(--color-neutral-light);
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  font:inherit;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-appearance:none;
+
+}
+.form-button:hover{
+  text-decoration: none;
+  box-shadow: 0 0 10px var(--color-neutral-light);
+}
+.form-button:active{
+  background-color: var(--color-main-light);
+}
+
+.form-button.sell{
+  background-color: var(--color-sell-medium);
+  color: var(--color-white)
+}
+.form-button.sell:active{
+  background-color: var(--color-sell-dark);
+}
+.hotdog{
+  display: inline-flex;
+  width: 100%;
+  border-width: 0;
+  background-color: var(--color-main-light);
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  font:inherit;
+  outline: 0;
+  -webkit-appearance:none;
+
+}
+.hotdog input{
+  display: inline-block;
+  width: 100%;
+  border-width: 0;
+  font:inherit;
+  outline: 0;
+  background-color: transparent;
+  -webkit-appearance:none;
+
+}
+
+
+.form-select {
+   position: relative;
+}
+.form-select>select {
+   display:inline-block;
+   width:100%;
+   border-width:0;
+   background-color:var(--color-main-light);
+   padding:0.5em 2em 0.5em 1em;
+   border-radius:0.3em;
+   font:inherit;
+   outline:0;
+   position:relative;
+   overflow:hidden;
+   -webkit-appearance:none;
+}
+.form-select::after {
+   position:absolute;
+   top:50%;
+   right:0.5em;
+   content:'▼';
+   font-family:"Open Sans";
+   font-size:0.9em;
+   color:var(--color-main-dark);
+   pointer-events:none;
+   transform: translateY(-50%);
+}
+
+
+
+/*ICON*/
+.icon{
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+
+
+
+
 
 
 /*Media Image*/
@@ -217,7 +436,7 @@ a:hover {
 }
 
 .mainbutton:hover {
-  background-color: var(--color-pink-medium);
+  background-color: var(--color-main-medium);
   color: white;
 }
 
@@ -265,22 +484,22 @@ a:hover {
 }
 
 .main{
-    border-color: var(--color-pink-medium);
+    border-color: var(--color-main-medium);
     color: #8e4556;
 }
 
 .main:hover {
-  background-color: var(--color-pink-medium);
+  background-color: var(--color-main-medium);
   color: white;
 }
 
 .solidmain{
-   background-color: var(--color-pink-medium);
+   background-color: var(--color-main-medium);
     color: white;
 }
 
 .solidmain:hover {
-  background-color: var(--color-pink-dark);
+  background-color: var(--color-main-dark);
   color: white;
 }
 
@@ -410,14 +629,14 @@ a:hover {
    }
    .card.hard {
       border-radius:0.2em;
-      border:2px solid var(--color-pink-medium);
+      border:2px solid var(--color-main-medium);
    }
    .card.dark {
-      background-color:var(--color-pink-dark);
+      background-color:var(--color-main-dark);
       color:var(--color-white);
    }
    .card.medium {
-      background-color:var(--color-pink-medium);
+      background-color:var(--color-main-medium);
    }
 
    .card.rainbow{
@@ -441,7 +660,7 @@ a:hover {
 
 /* WELL */
 .well {
-   background-color:var(--color-pink-medium);
+   background-color:var(--color-main-medium);
    padding:0.5em;
    border-radius:0.2em;
 }
