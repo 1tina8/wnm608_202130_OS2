@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Flora</title>
+
+      <?php include "parts/meta.php" ?>
+
+</head>
+</head>
+<body>
+      <?php include "parts/navbar.php" ?>
+
+      <!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*4>lorem40 -->
+<!--     <article id="article1" class="article card"> -->
+      <div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url(img/cover.jpg);">
+
+      <div>
+      <button class="main outlinebutton button-radius">
+      Shop New
+      </button>
+      </div>
+         <!-- <h2 class="card soft dark">New Arrivals</h2> -->
+      </div>
+
+
+   <div class="container">
+      <article id="article2" class="article card soft">
+         <h2>Store & Service</h2>
+         <div class="article-body ">
+            <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dicta odio consequuntur, doloribus error minima veniam, eos perferendis explicabo esse illum dignissimos nesciunt sed, laudantium quidem aliquam et, possimus harum quisquam! Eum dicta, adipisci! Ratione nemo sed quo iusto unde atque?</p>
+            <p>Tempora nulla dicta voluptatibus, corrupti ad quidem mollitia architecto necessitatibus tempore soluta fuga obcaecati cumque totam cum, laudantium molestiae. Consequuntur quo nihil quia libero ratione similique alias eligendi reiciendis labore et nesciunt adipisci aliquid tempora, beatae nobis molestiae quidem. Ipsam.</p>
+      </div>
+   </article>
+
+        <div class="container">
+      <article id="article3" class="article card">
+         <div class="Product1-body  display-flex flex-justify-center">
+            
+         <div  class="grid gap" > 
+            <div class="col-sm-12 col-md-4">
+            <!-- <div class="recommended-widget"> -->
+               <img src="img/productlist_1.jpg" width="300px" height="400">
+            </div>
+
+           
+             <div class="col-sm-12 col-md-4">
+             <!-- <div class="recommended-widget"> -->
+               <img src="img/productlist_2.jpg" width="300px" height="400">
+             </div>
+
+            <div class="col-sm-12 col-md-4">
+            <!-- <div class="recommended-widget"> -->
+               <img src="img/productlist_2.jpg" width="300px" height="400">
+            </div>
+
+         </div>       
+      </article>
+         </div>
+
+            <div class="flex flex-none">
+          <!--   <div class="grid gap">
+               <div class="col-sm-12 col-md-4 "> -->
+                  <button class="solidbutton solidlist">Shop All</button>
+              <!--  </div>
+                -->
+              <!-- 
+               <div class="col-sm-12 col-md-4 ">  -->
+                 <button class="solidbutton solidlist">Shop All</button>
+       <!--         </div> -->
+                
+            
+               <!-- <div class="col-sm-12 col-md-4 ">  -->
+                  <button class="solidbutton solidlist">Shop All</button>
+              <!--  </div> -->
+
+             </div>
+         </div>
+
+         
+         <div>
+            <div class="small-view-window display-flex flex-align-center flex-justify-center" style="background-image:url(img/cover_2.jpg)">
+               <div class="main outlinebutton button-radius"></
+            <button>Learn More</button>
+              </div>
+         </div>
+
+         <div class="container">
+      <article id="article4" class="article card">
+         <h2>Events</h2>
+         <div class="article-body">
+            <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dicta odio consequuntur, doloribus error minima veniam, eos perferendis explicabo esse illum dignissimos nesciunt sed, laudantium quidem aliquam et, possimus harum quisquam! Eum dicta, adipisci! Ratione nemo sed quo iusto unde atque?</p>
+            <p>Tempora nulla dicta voluptatibus, corrupti ad quidem mollitia architecto necessitatibus tempore soluta fuga obcaecati cumque totam cum, laudantium molestiae. Consequuntur quo nihil quia libero ratione similique alias eligendi reiciendis labore et nesciunt adipisci aliquid tempora, beatae nobis molestiae quidem. Ipsam.</p>
+
+         <div class="Product1-body display-flex flex-justify-center">
+         <div class="grid">
+            <div class="col-xs-12 col-sm-6">
+            <div class="recommended-widget">
+               <img src="img/product_2.jpg" width="470px">
+            </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+            <div class="recommended-widget">
+               <img src="img/product_2_01.jpg" width="470px">
+           </div>
+      </div>
+      </div>
+   </article>
+
+
+
+
+</body>
+</html>
