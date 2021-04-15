@@ -1,0 +1,38 @@
+[
+	{
+		"name":"Tina Chen",
+		"firstname":"Tina",
+		"lastname":"Chen",
+		"type": "Student",
+		"email":"xchen79@art.edu",
+		"classes":[608,605,613]
+	},
+
+
+   {
+      "name":"Hamilton Cline",
+      "firstname":"Hamilton",
+	  "lastname":"Cline",
+      "type":"Teacher",
+      "email":"hcline@academyart.edu",
+      "classes":[608,617,820]
+   },
+   {
+      "name":"Vivienne Youn",
+      "firstname":"Vivienne",
+	  "lastname":"Youn",
+      "type":"Student",
+      "email":"vivienneyounvv@gmail.com",
+      "classes":[622,606,608]
+   },
+   {
+      "name":"Lucille Huang",
+      "firstname":"Lucille",
+	  "lastname":"Huang",
+      "type":"Customers",
+      "email":"yhuang38@art.edu",
+      "classes":[608,617,820]
+   }
+
+]
+

@@ -11,6 +11,7 @@
     --color-neutral-medium: #94888e;
     --color-neutral-dark: #4a3f43;
 
+   --color-main-lighter:#efdee0;
    --color-main-light:#f2c9cc;
    --color-main-medium:#f3a8ad;
    --color-main-dark:#f1878e;
@@ -240,7 +241,7 @@ hr{
   display: inline-block;
   width: 100%;
   border-width: 0;
-  background-color: var(--color-neutral-lighter);
+  background-color: var(--color-main-lighter);
   padding: 0.5em 1em;
   border-radius: 0.3em;
   font:inherit;
@@ -272,7 +273,7 @@ hr{
   margin:0.5em 0;
   display: inline-block;
   font-size: 0.8em;
-  color: var(--color-neutral-medium);
+  color: var(--color-neutral-dark);
 }
 .form-button{
   display: inline-block;
