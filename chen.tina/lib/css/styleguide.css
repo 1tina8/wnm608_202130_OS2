@@ -132,6 +132,7 @@ a:hover {
 /*NAV*/
 
 .crumbs ul,
+.pills ul,
 .nav ul,
 .navbar ul {
    list-style-type:none;
@@ -153,6 +154,7 @@ a:hover {
 
 
 .crumbs ul,
+.pills ul,
 .nav.flex ul,
 .nav.stretch ul{
    display: flex;
@@ -161,6 +163,11 @@ a:hover {
 .nav.stretch li{
    flex:1 1 auto;
    text-align:center;
+}
+
+.nav.pills a {
+    padding:0.5em 1em;
+    border-radius:2em;
 }
 
 
@@ -279,7 +286,8 @@ hr{
   display: inline-block;
   width: 100%;
   border-width: 0;
-  background-color: var(--color-neutral-light);
+  background-color: var(--color-main-sub-dark);
+  color: white;
   padding: 0.5em 1em;
   border-radius: 0.3em;
   font:inherit;
@@ -293,7 +301,8 @@ hr{
 }
 .form-button:hover{
   text-decoration: none;
-  box-shadow: 0 0 10px var(--color-neutral-light);
+  box-shadow: 0 0 10px var(--color-main-medium);
+  color: black;
 }
 .form-button:active{
   background-color: var(--color-main-light);

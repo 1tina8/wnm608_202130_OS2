@@ -55,6 +55,11 @@ body {
 }
 
 
+
+[class*='col-']>.card {
+   height:100%;
+}
+
 /*.recommended-widget{
   padding: 1em;
 
