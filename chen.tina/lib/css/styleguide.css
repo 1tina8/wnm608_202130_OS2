@@ -362,7 +362,7 @@ hr{
    content:'▼';
    font-family:"Open Sans";
    font-size:0.9em;
-   color:var(--color-main-dark);
+   color:var(--color-neutral-lighter);
    pointer-events:none;
    transform: translateY(-50%);
 }
@@ -662,6 +662,12 @@ hr{
       padding:0;
    }
 
+    .card-section {
+      padding:1em;
+   }
+   .card-section~.card-section {
+      border-top:1px solid var(--color-neutral-light);
+   }
 
    .card>:first-child { margin-top:0; }
    .card>:last-child { margin-bottom:0; }
