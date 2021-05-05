@@ -315,6 +315,9 @@ hr{
 .form-button.sell:active{
   background-color: var(--color-sell-dark);
 }
+.form-button.inline{
+  width: initial;
+}
 .hotdog{
   display: inline-flex;
   width: 100%;

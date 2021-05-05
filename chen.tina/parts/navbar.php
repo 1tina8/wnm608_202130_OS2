@@ -10,7 +10,10 @@
                   <li><a href="product_list.php">Products</a></li>
                   <li><a href="services.php">Services</a></li>
                   <li><a href="search.php">Search</a></li>
-                  <li><a href="cart.php">Cart</a></li>
+                  <li><a href="product_cart.php">
+                     <span>Cart</span>
+                     <span class="badge"><?= makeCartBadge() ?></span>
+                  </a></li>
 
                </ul>
             </nav>

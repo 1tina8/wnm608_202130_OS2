@@ -2,6 +2,12 @@
 
 include "lib/php/functions.php";
 
+// pretty_dump($_POST);
+
+$product = MYSQLIQuery("SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
+$cart_product = cartItemById($product->id);
+
+//pretty_dump($product);
 
 ?>
 <!DOCTYPE html>
@@ -10,6 +16,7 @@ include "lib/php/functions.php";
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Flora</title>
+   <title>Added To Cart</title>
 
 
       <?php include "parts/meta.php" ?>
@@ -18,14 +25,24 @@ include "lib/php/functions.php";
       <?php include "parts/navbar.php" ?>
 
 
-      <div class="container">
-         <div class="card soft">
-            <h3>####product has been added to your cart</h3>
+     <div class="container">
+      <div class="card soft">
+         <?php
+
+         if(!isset($_GET['id'])) {
+            echo "You dun goofed";
+         } else {
+            ?>
+            <h2><?= $cart_product->amount ?> <?= $product->name ?> In Your Cart</h2>
+
             <div class="display-flex">
-            <div class="flex-none"><a class="form-button" href="javascript:window.history.back();">Back To Product</a></div>
-            <div class="flex-stretch"></div>
-            <div class="flex-none"><a class="form-button" href="product_list.php">Continue Shopping</a></div>
-         </div>
+               <div class="flex-none"><a class="form-button" href="javascript:window.history.back();">Back To Product</a></div>
+               <div class="flex-stretch"></div>
+               <div class="flex-none"><a class="form-button" href="product_list.php">Continue Shopping</a></div>
+            </div>
+            <?
+         }
+         ?>
       </div>
    </div>
 </body>
