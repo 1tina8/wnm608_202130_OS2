@@ -1,12 +1,8 @@
 <?php
 
 include "lib/php/functions.php";
-
-$product = MYSQLIQuery("
-   SELECT *
-   FROM `products`
-   WHERE `id` = {$_GET['id']}
-")[0];
+include "data/api.php";
+$product = makeStatement("product_by_id")[0];
 
 $thumbs = explode(",", $product->image_thumb);
 
@@ -69,7 +65,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
                </div>
                <div class="card-section"style="margin-top: 2em";>
                <hr>
-                  <button type="submit" class="form-button sell">Add To Cart</button>
+                  <button type="submit"style="margin-top: 2em" class="form-button sell">Add To Cart</button>
                </div>
             </form>
             <div class="card soft" style="margin-top: 2em";>
