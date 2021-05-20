@@ -69,7 +69,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
                </div>
             </form>
             <div class="card soft" style="margin-top: 2em";>
-               <?= $product->description ?>
+               <?= $product->description?>
             </div>
          </div>
       </div>
