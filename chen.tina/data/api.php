@@ -49,7 +49,7 @@ function makeStatement($type) {
             SELECT *
             FROM `products`
             WHERE
-               (`title` LIKE '%{$_GET['s']}%' OR
+               (`name` LIKE '%{$_GET['s']}%' OR
                `description` LIKE '%{$_GET['s']}%') AND
                `category` = '{$_GET['category']}'
             ORDER BY `{$_GET['o']}` {$_GET['d']}
@@ -66,7 +66,7 @@ function makeStatement($type) {
             SELECT *
             FROM `products`
             WHERE
-               `title` LIKE '%{$_GET['s']}%' OR
+               `name` LIKE '%{$_GET['s']}%' OR
                `category` LIKE '%{$_GET['s']}%' OR
                `description` LIKE '%{$_GET['s']}%'
             ORDER BY `{$_GET['o']}` {$_GET['d']}

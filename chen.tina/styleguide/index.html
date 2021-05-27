@@ -26,7 +26,7 @@
 	</header>
 
 	<div class="container">
-		<div class="card soft">
+	<!-- 	<div class="card soft"> -->
 		<h2>Table of Contents</h2>
 
 		<ul class="nav toc">
@@ -92,12 +92,83 @@
 		</div>
 
 
-		<div class="container" id="card">
-			<div class="card soft">
+    <div class="display-flex flex-align-center">
+      <div class="flex-non">
+        <code>&lt;footer>&lt;/footer></code>
+      </div>
+      <div class="felx-stretch"><footer>footer</footer></div>
+    </div>
+
+
+		<div class="container card soft" id="card">
+
 				<h2>Color</h2>
-         <div style="background-color:var(--color-pink-light)">Color Pink Light</div>
-         <div style="background-color:var(--color-pink-medium)">Color Pink Medium</div>
-         <div style="background-color:var(--color-pink-dark)">Color Pink Dark</div>
+        <p>Main Color</p>
+        <div class="grid gap ">
+          <div class="col-sm-12 col-md-3">
+         <div class="circlemainlighter">
+          <p style="text-align: center;">Main Lighter Color</p>
+         </div>
+       </div>
+
+       <div class="col-sm-12 col-md-3">
+         <div class="circlemainlight">
+          <p style="text-align: center;">Main Light Color</p>
+         </div>
+       </div>
+
+       <div class="col-sm-12 col-md-3">
+         <div class="circlemainmedium">
+          <p style="text-align: center;">Main Medium Color</p>
+         </div>
+       </div>
+
+       <div class="col-sm-12 col-md-3">
+         <div class="circlemaindark">
+          <p style="text-align: center;">Main Dark Color</p>
+         </div>
+       </div>
+      
+
+          <div class="col-sm-12 col-md-4">
+         <div class="circlemainsublight">
+          <p style="text-align: center;">Main Sub Light Color</p>
+         </div>
+       </div>
+
+
+          <div class="col-sm-12 col-md-4">
+         <div class="circlemainsubmedium">
+          <p style="text-align: center;">Main Sub Medium Color</p>
+         </div>
+       </div>
+
+
+          <div class="col-sm-12 col-md-4">
+         <div class="circlemainsubdark">
+          <p style="text-align: center;">Main Sub Dark Color</p>
+         </div>
+       </div>
+
+         <div class="col-sm-12 col-md-4">
+         <div class="circlesublight">
+          <p style="text-align: center;">Sub Light Color</p>
+         </div>
+       </div>
+
+       <div class="col-sm-12 col-md-4">
+         <div class="circlesubmedium">
+          <p style="text-align: center;">Sub Medium Color</p>
+         </div>
+       </div>
+
+       <div class="col-sm-12 col-md-4">
+         <div class="circlesubdark">
+          <p style="text-align: center;">Sub DarkColor</p>
+         </div>
+       </div>
+
+
       </div>
    </div>
 
@@ -225,9 +296,9 @@
 				<div class="card dark soft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis accusantium quis non error ipsam aspernatur commodi, aliquam quasi ratione.</div>
 
 
-				<h3>Soft Rainbow Card</h3>
+				<!-- <h3>Soft Rainbow Card</h3>
 				<div class="card rainbow soft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis accusantium quis non error ipsam aspernatur commodi, aliquam quasi ratione.</div>
-			
+			 -->
         <h3>Soft Flat Card</h3>
         <div class="card flat soft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis accusantium quis non error ipsam aspernatur commodi, aliquam quasi ratione.</div>
 
@@ -533,7 +604,7 @@ const makeTable = (classes='') => {
 						List
 					</button>
 					<button class="outlinebutton comfirm">
-						Comfirm
+						Invite
 					</button>
 					<button class="outlinebutton cancel">
 						Cancel
@@ -552,7 +623,7 @@ const makeTable = (classes='') => {
 						List
 					</button>
 					<button class="solidbutton solidcomfirm">
-						Comfirm
+						Invite
 					</button>
 					<button class="solidbutton solidcancel">
 						Cancel
@@ -573,6 +644,28 @@ const makeTable = (classes='') => {
 				</div>
 		</div>
 	</div>
+
+     <h3>Emoji Reviews</h3>
+      <div class="nav flex grid gap ">
+         <div>
+         <ul class="li">
+                  <span><div class="mainbutton button-round"></button><img src="img/icon/happy.svg" alt="" class="icon"></span></ul>
+         </div>
+         <div>
+         <ul class="li">
+                  <span><div class="mainbutton button-round"></button><img src="img/icon/weeping.svg" alt="" class="icon"></span></ul>
+         </div>
+         <div>
+         <ul class="li">
+                  <span><div class="mainbutton button-round"></button><img src="img/icon/incredulous.svg" alt="" class="icon"></span></ul>
+         </div>
+         <div>
+         <ul class="li">
+                  <span><div class="mainbutton button-round"></button><img src="img/icon/drain.svg" alt="" class="icon"></span></ul>
+         </div>
+         
+        
+      </div>
 
 
          <h3>Other Layouts</h3>
@@ -619,6 +712,12 @@ const makeTable = (classes='') => {
                <option value="horse">horse</option>
             </select>
          </div>
+          <h3>Custom Checkbox (checkbox trick)</h3>
+         <div class="toggle">
+            <input class="hidden" type="checkbox" id="product-on_sale" name="product-on_sale" value="1">
+            <label for="product-on_sale"></label>
+         </div>
+
 
       </div>
    </div>
@@ -687,10 +786,7 @@ const makeTable = (classes='') => {
 					</nav>
 				</div>
 			</header>
-	<div class="container">
-		<div class="card soft">
-		</div>
-	</div>
+	
 
 	<!-- 	<div class="container" id="buttons">
 			<div class="buttons">

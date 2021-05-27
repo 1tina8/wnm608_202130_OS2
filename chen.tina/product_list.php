@@ -52,13 +52,17 @@ if(isset($_GET['t'])) {
 </head>
 <body>
       <?php include "parts/navbar.php" ?>
-        <div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url(img/cover.jpg);">
-               </div> 
+        <div class="view-window display-flex flex-align-center flex-justify-center " style="background-image:url(img/cover.jpg);">
+          <div class="container covertext">
+          <h1>Suprise Your Loved Ones</h1>
+          <p>Make your loved one smile with blooming mood-boosters</p>
+          </div>
+          </div> 
         <!-- 
             <h2>Product List</h2> -->
 
       <div class="container">
-        <div class="card soft">
+        <!-- <div class="card soft"> -->
         <h2>Shop All Items</h2>
        <nav class="nav flex grid gap">
          <a href="product_list.php?t=products_by_category&category=Roses&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="outlinebutton main inline">Roses</a>
@@ -90,7 +94,7 @@ if(isset($_GET['t'])) {
          <input type="hidden" name="o" value="<?=$_GET['o']?>">
          <input type="hidden" name="l" value="<?=$_GET['l']?>">
 
-        <div class="card soft">
+       <!--  <div class="card soft"> -->
         <div class="grid">
          <div class="col-xs-12 col-md-3">
           <p>Sort By</p>
@@ -119,7 +123,39 @@ if(isset($_GET['t'])) {
       </div>
    </div>
    <div class="container">
-      <div class="card soft"><a href="admin">Product Admin</a></div>
+     <!--  <div class="card soft"> -->
+      <p>Edit</p>
+      <a href="admin">Product Admin</a></div>
    </div>
 </body>
+   <hr style="  margin-top: 7em;">
+   <footer>
+    <div class="grid gap ">
+    <div class="col-sm-12 col-md-3">
+    <p>Copyright 2021@Tina Chen</p>
+    </div>
+   <div class="col-sm-12 col-md-3">
+    <h2>Contact Us</h2>
+      <p>Facebook</p>
+      <p>Instagram</p>
+      <p>415-515-5515</p>
+    </div>
+    <div class="col-sm-12 col-md-3">
+    <h2>About Us</h2>
+      <p>Store & Events</p>
+      <p>Careers</p>
+      <p>Get Email Updates</p>
+    </div>
+       <div class="col-sm-12 col-md-3">
+    <h2>Flowers On Us</h2>
+      <p>Earn $25 for every friend you invite.</p>
+      <button class="solidcomfirm solidbutton button-radius">
+            <a href="about.php" >
+           Inivite 
+            </a>
+          </button>
+
+    </div>
+  
+    </footer>
 </html>

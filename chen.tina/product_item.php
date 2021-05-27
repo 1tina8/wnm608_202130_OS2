@@ -65,7 +65,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
                </div>
                <div class="card-section"style="margin-top: 2em";>
                <hr>
-                  <button type="submit"style="margin-top: 2em" class="form-button sell">Add To Cart</button>
+                  <button type="submit"style="margin-top: 2em" class="form-button  ">Add To Cart</button>
                </div>
             </form>
             <div class="card soft" style="margin-top: 2em";>
@@ -73,6 +73,58 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
             </div>
          </div>
       </div>
+      <h2>Reviews</h2>
+      <p>Write your first review</p>
+      <div class="nav flex grid gap ">
+         <div>
+         <ul class="li">
+                  <span><div class="mainbutton button-round"></button><img src="img/icon/happy.svg" alt="" class="icon"></span></ul>
+         </div>
+         <div>
+         <ul class="li">
+                  <span><div class="mainbutton button-round"></button><img src="img/icon/weeping.svg" alt="" class="icon"></span></ul>
+         </div>
+         <div>
+         <ul class="li">
+                  <span><div class="mainbutton button-round"></button><img src="img/icon/incredulous.svg" alt="" class="icon"></span></ul>
+         </div>
+         <div>
+         <ul class="li">
+                  <span><div class="mainbutton button-round"></button><img src="img/icon/drain.svg" alt="" class="icon"></span></ul>
+         </div>
+         
+        
+      </div>
    </div>
 </body>
+ <hr style="  margin-top: 7em;">
+   <footer>
+    <div class="grid gap ">
+    <div class="col-sm-12 col-md-3">
+    <p>Copyright 2021@Tina Chen</p>
+    </div>
+   <div class="col-sm-12 col-md-3">
+    <h2>Contact Us</h2>
+      <p>Facebook</p>
+      <p>Instagram</p>
+      <p>415-515-5515</p>
+    </div>
+    <div class="col-sm-12 col-md-3">
+    <h2>About Us</h2>
+      <p>Store & Events</p>
+      <p>Careers</p>
+      <p>Get Email Updates</p>
+    </div>
+       <div class="col-sm-12 col-md-3">
+    <h2>Flowers On Us</h2>
+      <p>Earn $25 for every friend you invite.</p>
+      <button class="solidcomfirm solidbutton button-radius">
+            <a href="about.php" >
+           Inivite 
+            </a>
+          </button>
+
+    </div>
+  
+    </footer>
 </html>

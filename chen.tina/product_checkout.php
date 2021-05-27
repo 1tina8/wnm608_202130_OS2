@@ -18,9 +18,73 @@ $cart = getCartItems();
          <div class="col-xs-12 col-md-8">
             <div class="card soft">
                <a href="#" onclick="history.back();return false;">Back</a>
-               <h2>This is a form</h2>
+               <h2>Checkout</h2>
+               <h3>Shipping Address</h3>
 
-               <div>address, credit card</div>
+               <div class="grid gap">
+          <div class="col-xs-12 col-md-6">
+            <div class="form-control">
+            <label for="example1" class="form-label">First Name</label>
+            <input id="example1" type="text" placeholder="First Name" class="form-input">
+            </div>
+          </div>
+         <div class="col-xs-12 col-md-6">
+          <div class="form-control">
+            <label for="example2" class="form-label">Last Name</label>
+            <input id="example2" type="text" placeholder="Last Name" class="form-input">
+          </div>
+         </div>
+       </div>
+         
+         <div class="grid gap">
+          <div class="col-xs-12 col-md-6">
+           <div class="form-control">
+            <label for="example3" class="form-label">Address</label>
+            <input id="example3" type="text" placeholder="Address" class="form-input">
+            </div>
+          </div>
+         <div class="col-xs-12 col-md-6">
+          <div class="form-control">
+            <label for="example3" class="form-label">City</label>
+            <input id="example3" type="text" placeholder="City" class="form-input">
+          </div>
+        </div>
+      </div>
+
+      <div class="grid gap">
+          <div class="col-xs-12 col-md-6">
+           <div class="form-control">
+            <label for="example3" class="form-label">State</label>
+            <input id="example3" type="text" placeholder="State" class="form-input">
+            </div>
+          </div>
+         <div class="col-xs-12 col-md-6">
+          <div class="form-control">
+            <label for="example3" class="form-label">ZIP Code</label>
+            <input id="example3" type="text" placeholder="ZIP Code" class="form-input">
+          </div>
+        </div>
+      </div>
+
+       <div class="grid gap">
+          <div class="col-xs-12 col-md-6">
+           <div class="form-control">
+            <label for="example3" class="form-label">Email</label>
+            <input id="example3" type="text" placeholder="Email" class="form-input">
+            </div>
+          </div>
+         <div class="col-xs-12 col-md-6">
+          <div class="form-control">
+            <label for="example3" class="form-label">Phone Number</label>
+            <input id="example3" type="text" placeholder="Phone Number" class="form-input">
+          </div>
+        </div>
+      </div>
+      <div class="payment">
+       <h3>Payment Method</h3>
+       <p>Apple Pay</p>
+       <p>Debit Card</p>
+       <p>Paypal</p>
             </div>
          </div>
          <div class="col-xs-12 col-md-4">

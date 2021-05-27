@@ -174,6 +174,7 @@ HTML;
             <ul>
                <li><a href="<?= $_SERVER['PHP_SELF'] ?>">List</a></li>
                <li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">Add New Product</a></li>
+               <li><a href="product_list.php">Products</a></li>
             </ul>
          </nav>
       </div>

@@ -14,11 +14,13 @@ include "lib/php/functions.php";
    
 
    <div class="container">
-      <div class="card soft">
+      <div class="card soft"style="text-align: center;">
          <h2>Thank you for your purchase!</h2>
 
-         <div>You bought these things</div>
-         <div><a href="product_list.php">Try out these things</a></div>
+         <div>Your Beautiful Flowers Are On The Way</div>
+         <div class="grid gap">
+          <div class="col-xs-12 col-md-3">
+         <div class="outlinebutton list"style="margin-top: 2em;"><a href="product_list.php">Try out more flowers</a></div>
       </div>
    </div>
 </body>
